@@ -18,7 +18,7 @@ def extract_weather_data(url:str) -> list:
         logging.warning("Nenhum dado encontrado")
         return []
 
-    output_path = 'data/weather_data.json'
+    output_path = Path(__file__).parents[2] / 'data' / 'weather_data.json'
     output_dir = Path(output_path).parent
     output_dir.mkdir(parents=True, exist_ok=True)
     
