@@ -87,7 +87,7 @@ def normalize_datetime_columns(df: pd.DataFrame, columns_names: list[str]) -> pd
 
 def data_transformation():
     print('\n/ Iniciando a transformação')
-    df = create_dataframe(path_name)
+    df = create_dataframe(path)
     df = normalize_dataframe(df)
     df = drop_columns(df, columns_names_to_drop)
     df = rename_columns(df, dict_columns_names_to_rename)
