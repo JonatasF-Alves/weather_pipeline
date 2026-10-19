@@ -16,3 +16,4 @@ config/.env
 # Dados
 data/
 logs/
+config/airflow.cfg
